@@ -1,5 +1,6 @@
 from utilities import usefulness
 from other_stuff import mystuff
 
-mything = usefulness.bigthing("Bob","BigBob")
-mystuff.do_stuff(mything,"Tony")
+my_first_thing = usefulness.thing("Paul")
+my_second_thing = usefulness.bigthing("Bob","BigBob")
+mystuff.do_stuff(my_second_thing,"Tony")

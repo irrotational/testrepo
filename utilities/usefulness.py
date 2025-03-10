@@ -1,4 +1,5 @@
 class thing:
+
     def __init__(self,name):
         self.name = name
 
@@ -10,9 +11,14 @@ class thing:
         return repr_str
 
 class bigthing(thing):
+
     def __init__(self,name,bigname):
         thing.__init__(self,name)
         self.bigname = bigname
 
     def say_hi(self,your_name):
         print( "Hi %s, I am a bigthing, my name is %s, and my bigname is %s" % (your_name,self.name,self.bigname) )
+
+    def __repr__(self):
+        repr_str = "'bigthing' instance, with name : %s, and bigname % %s" % (self.name,self.bigname)
+        return repr_str
